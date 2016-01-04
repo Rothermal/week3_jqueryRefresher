@@ -24,7 +24,7 @@ function init () {
             //console.log(id, gender, first_name, last_name, email);
          $content = '<br/>'+'Id: '+ id + '<br/>' + 'Gender: '+ gender +'<br/>' + 'First name: ' + first_name + '<br/>'+ 'Last name: ' + last_name + '<br/>' + 'Email: '+ email + '<br/>';
 
-         $('.people').append($content);
+         $('.people').append('<p>'+$content+'</p>');
 
 
 

@@ -13,7 +13,7 @@ function init () {
     $.ajax('data.json').then(function (response) {
 
         for (var i = 0; i < response.length; i++) {
-            var $el = '';
+            var $content = '';
 
             var id = response[i].id;
             var gender = response[i].gender;
@@ -22,7 +22,7 @@ function init () {
             var email = response[i].email;
 
             //console.log(id, gender, first_name, last_name, email);
-           var $content = '<br/>'+'Id: '+ id + '<br/>' + 'Gender: '+ gender +'<br/>' + 'First name: ' + first_name + '<br/>'+ 'Last name: ' + last_name + '<br/>' + 'Email: '+ email + '<br/>';
+         $content = '<br/>'+'Id: '+ id + '<br/>' + 'Gender: '+ gender +'<br/>' + 'First name: ' + first_name + '<br/>'+ 'Last name: ' + last_name + '<br/>' + 'Email: '+ email + '<br/>';
 
          $('.people').append($content);
 
